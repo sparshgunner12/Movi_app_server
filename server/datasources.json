@@ -4,11 +4,11 @@
     "connector": "memory"
   },
   "msqlDs": {
-    "name": "msqlDs",
-    "connector": "mysql",
     "host": "localhost",
     "database": "test",
     "username": "root",
-    "password": "sparshrishabh"
+    "password": "sparshrishabh",
+    "name": "msqlDs",
+    "connector": "mysql"
   }
 }

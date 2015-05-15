@@ -14,4 +14,17 @@ module.exports = function(app) {
       console.log('Models created: \n', coffeeShops);
     });
   });
+  app.dataSources.msqlDs.automigrate('movies', function(err) {
+    if (err) throw err;
+ 
+    app.models.movies.create([
+      {name: 'HappyNewYear'},
+      {name: 'Gabbar'},
+      {name: 'FastAndFurious7'},
+    ], function(err, coffeeShops) {
+      if (err) throw err;
+ 
+      console.log('Models created: \n', coffeeShops);
+    });
+  });
 };
